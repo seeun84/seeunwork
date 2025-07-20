@@ -1,0 +1,186 @@
+@media (max-width: 1800px) {
+  .swiper-contents_wrap{
+    margin-left: 40px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .work-section_wrap{
+    padding: 40px;
+  }
+  .swiper-contents_wrap{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .container-wrapper{
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .year-portfolio{
+    writing-mode: unset;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .navigation-buttons{
+    margin-left: 0px;
+  }
+  .contact-section h1{
+    font-size: 8rem;
+  }
+  .contact-title{
+    font-size: 1.5rem;
+  }
+  .contact-title_wrap p{
+    font-size: 1.2rem;
+  }
+  .contact-footer-container{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .main-section{
+    text-align: center;
+  }
+  .main-title{
+    font-size: 6rem;
+  }
+  .main-subtitle span{
+    font-size: 12rem;
+  }
+  .work-section_wrap{
+    padding: 16px;
+  }
+  .work-section-title{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .contact-section h1{
+    font-size: 5rem;
+  }
+  .contact-title{
+    font-size: 1.2rem;
+  }
+  .contact-title_wrap p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .about-text_wrap h3{
+    font-size: 30px !important;
+  }
+  .about-text_wrap p{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .about-image-box{
+    width: 77% !important;
+  }
+  .card-contents{
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .card-contents-title{
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 6px !important;
+  }
+  .card-contents-text{
+    font-size: 1rem;
+  }
+  .container{
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse{
+    background: #121212;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .navbar-nav{
+    gap: 6px;
+  }
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .main-subtitle span{
+    font-size: 3.5rem;
+  }
+  .footer-center{
+    bottom: 350px;
+  }
+  .web-publisher{
+    font-size: 1.5rem;
+  }
+  .about-image-box{
+    width: 50% !important;
+  }
+  .year-text{
+    left: 68.5% !important;
+  }
+  .portfolio-section{
+    padding-bottom: 50px !important;
+  }
+  .portfolio-skill-back{
+    display: none !important;
+  }
+  
+  .year-portfolio{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .navigation-buttons .swiper-button-prev, .navigation-buttons .swiper-button-next{
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 18px !important;
+  }
+  .background-text-slide{
+    top: 92%;
+    font-size: 150px;
+  }
+  
+  .hover-button{
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+  
+  .modal-body{
+    padding: 16px !important;
+  }
+  .modal-title{
+    font-size: 1.5rem;
+  }
+  .go-site-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+  .modal-info-contents-text_wrap p{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .contact-footer-container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .contact-section h1{
+    font-size: 3rem;
+  }
+  .footer-center{
+    font-size: 1rem;
+  }
+}

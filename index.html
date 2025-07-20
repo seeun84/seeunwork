@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+
+  <!--bootstrap Css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- custom Css--> 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <!--bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!--gsap js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+
+  <!--header-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo.png" alt="로고">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item"><a class="nav-link active" href="#">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--main-->
+  <section class="main-section position-relative">
+    <div>
+      <div class="main-title">PUBLISHER</div>
+      <div class="main-subtitle">
+        <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+      </div>
+    </div>
+    <div class="contact-info">
+      <div>MAIL<br><a href="mailto:hanseeun84@naver.com">hanseeun84@naver.com</a></div>
+      <div class="mt-5">TEL<br>010 6705 9948</div>
+    </div>
+    <div class="web-publisher">
+      <div>WEB</div>
+      <div>PUBLISHER</div>
+    </div>
+    <div class="footer-center">
+      2025 HAN SE EUN
+    </div>
+  </section>
+
+  <section class="about-section position-relative">
+    <div class="background-text-slide">
+      <span>WEB PUBLISHER WEB PUBLISHER WEB PUBLISHER WEB PUBLISHER</span>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 position-relative mb-4 mb-md-0 about-image-wrap">
+          <div class="about-image-box mx-auto" style="width: 65%;">
+            <img src="/img/intro_img.png" class="img-fluid w-100 h-100 object-fit-cover" alt="소개 이미지">
+          </div>
+          <div class="year-text position-absolute top-50 translate-middle-y" style="left: 74.5%;">
+            <span class="text-white fs-2"><span style="color:#1A1A1A;">20</span>25</span>
+          </div>
+        </div>
+        <div class="col-md-7 text-white about-text_wrap">
+          <h3 style="font-size: 36px; margin-bottom: 40px;"><span style="color: #BEB392;">ABOUT</span> <strong>SEEUN</strong></h3>
+          <p>
+            안녕하세요. 웹 퍼블리셔 한세은 입니다.<br>
+            단순히 웹 페이지를 구현하는 것에 그치는 것이 아니라 웹 표준, 웹 접근성,<br>
+            그리고 웹 호환성을 항상 고려하여 마크업 하는<br>
+            <span style="color: #AD1A10;">웹 퍼블리셔</span>가 되고자 합니다.
+          </p>
+          <p style="margin-top: 40px;">
+            인터렉션을 구현하여 웹 페이지의 정보를 효과적으로 전달하고<br>
+            디자인의 퀄리티를 높여주며 재미 요소를 부여하는 것에 흥미를 느낍니다.<br>
+            주어진 일에 최선을 다하며 새로운 것을 접하는 것에 두려워 하지 않고<br>
+            항상 도전적이고 열린정신의 자세로 임할 것입니다.<br>
+            모든 유저가 쉽게 이용할 수 있는 웹 환경을 구현하고 더 나아가<br>
+            고객사의 프로젝트에 최선을 다할 것입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section" style="padding-bottom: 0px;">
+    <div class="container-wrapper" style="width: 90%;">
+      <div class="swiper mySwiper swiper-contents_wrap">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">01</div>
+            <img src="/img/vs_logo.png" alt="vsCode" width="80">
+            <div class="skill-title">Html5 / Css</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+            </div>
+            <p class="swiper-contents-text">웹 표준 및 웹 접근성을 이해하며 이에 따른 작업이 가능합니다. css 3.0요소 까지 적용 가능합니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">02</div>
+            <img src="/img/js_logo.png" alt="Javascript" width="80">
+            <div class="skill-title">Javascript</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+            </div>
+            <p class="swiper-contents-text">스크롤을 이용한 이벤트 제어와 페이지 리사이징에 반응하는 스크립트 구현이 가능합니다. </p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">03</div>
+            <img src="/img/jquery_logo.png" alt="JQuery" width="80">
+            <div class="skill-title">JQuery</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="gray"></span>
+            </div>
+            <p class="swiper-contents-text">Query 라이브러리와 메서드 방식을 활용하여 이벤트 구현이 가능합니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">04</div>
+            <img src="/img/bootstrap_logo.png" alt="Bootstrap" width="80">
+            <div class="skill-title">Bootstrap</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+            </div>
+            <p class="swiper-contents-text">다양한 구성 요소와 유틸리티 클래스를 활용하여 효율적으로 코드를 작성 할 수 있습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">05</div>
+            <img src="/img/photoshop_logo.png" alt="Photoshop" width="80">
+            <div class="skill-title">Photoshop</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="gray"></span>
+            </div>
+            <p class="swiper-contents-text">레이어 속성을 이용한 이미지 합성 작업과 필터 기능을 사용한 보정 작업이 가능합니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">06</div>
+            <img src="/img/illustrate_logo.png" alt="Illustrator" width="80">
+            <div class="skill-title">Illustrator</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="gray"></span>
+            </div>
+            <p class="swiper-contents-text">레이어 속성과 패스를 이용한 백터 이미지 작업이 가능하고 디자인 및 시안 제작이 가능합니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">07</div>
+            <img src="/img/figma_logo.png" alt="Figma" width="80">
+            <div class="skill-title">Figma</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+            </div>
+            <p class="swiper-contents-text">ux/ui 설계와 프로토타이핑이 가능하며 Figma를 활용한 원활한 협업 경험이 있습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">08</div>
+            <img src="/img/d3_logo.png" alt="D3.js" width="80">
+            <div class="skill-title">D3.js</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="gray"></span>
+              <span class="gray"></span>
+            </div>
+            <p class="swiper-contents-text">D3.js 라이브러리를 사용해 다양한 형태의 데이터 시각화된 차트를 수정 후 구현 할 수 있습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-contents-num">09</div>
+            <img src="/img/angular_logo.png" alt="Angular" width="80">
+            <div class="skill-title">Angular</div>
+            <div class="bar">
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="yellow"></span>
+              <span class="gray"></span>
+              <span class="gray"></span>
+            </div>
+            <p class="swiper-contents-text">Angular로 작성된 코드 분석하고 효율적으로 수정 및 유지보수 할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-portfolio">2025 <span>PORTFOLIO</span></div>
+
+      <div class="navigation-buttons">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 40px;" class="portfolio-skill-back">
+      <img src="/img/skill-back_img.png" alt="스킬 이미지">
+    </div>
+  </section>
+
+  <section class="work-section p-4">
+    <div class="bg-white shadow work-section_wrap">
+      <h3 class="fw-bold work-section-title">WORKS</h3>
+      
+      <div class="row g-4" style="justify-content: space-between;">
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/vocas_img.png" alt="보카스">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">VOCAS 프로그램 사이트</h6>
+            <small class="text-muted card-contents-text">VOCAS 영어 단어 프로그램 소개 사이트</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/vocas2_img.png" alt="보카스">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal1-2">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">VOCAS 프로그램</h6>
+            <small class="text-muted card-contents-text">VOCAS 영어 단어 프로그램 (학생용)</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/vocas3_img.png" alt="보카스">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal1-3">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">VOCAS 프로그램</h6>
+            <small class="text-muted card-contents-text">VOCAS 영어 단어 프로그램 (선생님용)</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/usher_img.png" alt="어셔어학원">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">어셔어학원 홈페이지</h6>
+            <small class="text-muted card-contents-text">어셔어학원 토플 전문 학원 소개 홈페이지</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/ushern_img.png" alt="어셔인">
+            </div> 
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                사이트 보러가기
+              </button>
+            </div>         
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">어셔인 사이트</h6>
+            <small class="text-muted card-contents-text">어셔어학원 교재, 프로그램, 인강 구매할 수 있는 사이트</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/idrsoft_img.png" alt="아이디알소프트">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">IDRSOFT 홈페이지</h6>
+            <small class="text-muted card-contents-text">IDRSOFT IT전문 회사 소개 홈페이지</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/solution_img.png" alt="아이디알소프트 솔루션">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">IDRSOFT SOLUTION 사이트</h6>
+            <small class="text-muted card-contents-text">IDRSOFT 회사 내부 SOLUTION개발 사이트</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/smartAI_img.png" alt="청년몽땅 AI">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">청년몽땅 AI 사이트</h6>
+            <small class="text-muted card-contents-text">청년 대상 AI 기반 맞춤형 정보와 서비스 제공을 위한 사이트</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/taskworld_img.png" alt="taskWorld">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">TaskWorld 사이트</h6>
+            <small class="text-muted card-contents-text">TaskWorld 업무 관리 플랫폼 사이트</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 card-contents">
+          <div class="card border-0 position-relative hover-card">
+            <div class="card-img-top">
+              <img src="/img/kbLife_img.png" alt="KB라이프">
+            </div>
+            <div class="hover-overlay">
+              <button type="button" class="hover-button" data-bs-toggle="modal" data-bs-target="#projectModal8">
+                사이트 보러가기
+              </button>
+            </div>
+          </div>
+          <div class="card-body py-2">
+            <h6 class="fw-bold mb-3 card-contents-title">KB라이프 사이트</h6>
+            <small class="text-muted card-contents-text">KB라이프 사이트 별도 페이지 유지보수</small>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section text-white">
+    <div class="container contact-footer-container">
+      <div class="row mb-5">
+        <div class="col-md-6 contact-title_wrap">
+          <h4 class="fw-bold mb-5 contact-title">역량있는 웹 퍼블리셔를 찾고 계신가요 ?</h4>
+          <p class="mb-2">늘 새로운 것에 도전하며, 끊임없는 발전을 향해 나아가는,</p>
+          <p class="mb-2 text-danger">웹 퍼블리셔 한세은 <span style="color: #fff;">입니다.</span></p>
+          <p class="mb-4">제 포트폴리오를 봐주셔서 감사합니다 :)</p>
+        </div>
+      </div>
+
+      <div class="row text-center mb-5 contact-main-title">
+        <h1 class="display-1 fw-bold">CONTACT ME</h1>
+      </div>
+
+      <div class="row contact-info-footer gy-4" style="justify-content: space-between;">
+        <div class="col-12 col-md-5">
+          <label class="form-label fw-bold d-flex justify-content-between align-items-center border-bottom pb-3">
+            Tel
+            <i class="bi bi-telephone-fill contact-info-icon"></i>
+          </label>
+          <p class="mt-3">010-6705-9948</p>
+        </div>
+        <div class="col-12 col-md-5">
+          <label class="form-label fw-bold d-flex justify-content-between align-items-center border-bottom pb-3">
+            Mail
+            <i class="bi bi-envelope-fill contact-info-icon"></i>
+          </label>
+          <p class="mt-3">hanseeun84@naver.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">VOCAS 단어 프로그램</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="http://49.247.37.22/vocas_new/vocas_homepage/main.html" target="_blank">
+              <img src="/img/vocas_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>        
+            <a href="http://49.247.37.22/vocas_new/vocas_homepage/main.html" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2024.12 ~ 2025.05</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 기획, 디자인, 퍼블리싱</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery, bootstrap</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              VOCAS 단어 프로그램(학생용/선생님용)을 효과적으로 소개하고 홍보하기 위한 <br>
+              공식 랜딩 페이지의 디자인 및 퍼블리싱 작업을 진행하였습니다. <br>
+              프로그램의 핵심 기능과 장점을 한눈에 파악할 수 있는 구성을 목표로, 시각적으로 집중도를 높이면서도 사용자 친화적인 UI로 설계하였습니다.
+              PC와 모바일 환경 모두에서 일관된 사용성을 유지할 수 있도록 반응형 웹 구조로 구축하였으며, <br>
+              VOCAS 브랜드의 톤앤매너를 반영하여 색상과 타이포그래피, 레이아웃을 정리하였습니다. <br>
+              각 콘텐츠 영역이 정보 전달은 명확하게, 사용자 경험은 부드럽게 전달되도록 구조를 잡고 인터랙션 요소를 추가하여 페이지 완성도를 높였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal1-2" tabindex="-1" aria-labelledby="projectModal1-2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">VOCAS 단어 프로그램 (학생용)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="http://49.247.37.22/vocas_new/vocas_student/index.html" target="_blank">
+              <img src="/img/vocas2_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>        
+            <a href="http://49.247.37.22/vocas_new/vocas_student/index.html" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2024.12 ~ 2025.05</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 기획, 디자인, 퍼블리싱</p>
+            <p class="mb-4"><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery, bootstrap</p>
+            <p><strong class="text-danger">figma 링크</strong> : <a class="vocas-design-link" href="https://www.figma.com/design/EZKiC2Rn0EuMJ5mxj0eHpC/VOCAS?node-id=0-1&t=YEG6rbUmBaRZyuTw-1">https://www.figma.com/design/EZKiC2Rn0EuMJ5mxj0eHpC/VOCAS?node-id=0-1&t=YEG6rbUmBaRZyuTw-1</a></p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              학생들이 쉽고 편리하게 사용할 수 있도록 설계된 영어 단어 학습 및 테스트 프로그램을 직접 디자인하고 코딩하여 개발하였습니다.
+              사용자의 학습 효율성을 높일 수 있도록 UI/UX에 중점을 두어 제작하였습니다.<Br>
+              Bootstrap 기반으로 반응형 웹 환경을 구축하여 PC와 모바일 모두에서 원활하게 작동하며,<Br>
+              학습에 집중할 수 있도록 깔끔하고 직관적인 인터페이스로 구성하였습니다.<br>
+              실제 사용자 경험을 고려한 퍼블리싱과 인터랙션 구현을 통해, 학습자 중심의 실용적인 프로그램으로 완성하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal1-3" tabindex="-1" aria-labelledby="projectModal1-3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">VOCAS 단어 프로그램 (선생님용)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="http://49.247.37.22/vocas_new/vocas_manage/index.html" target="_blank">
+              <img src="/img/vocas3_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>        
+            <a href="http://49.247.37.22/vocas_new/vocas_manage/index.html" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2024.12 ~ 2025.05</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 기획, 디자인, 퍼블리싱</p>
+            <p class="mb-4"><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery, bootstrap</p>
+            <p><strong class="text-danger">figma 링크</strong> : <a class="vocas-design-link" href="https://www.figma.com/design/EZKiC2Rn0EuMJ5mxj0eHpC/VOCAS?node-id=0-1&t=YEG6rbUmBaRZyuTw-1">https://www.figma.com/design/EZKiC2Rn0EuMJ5mxj0eHpC/VOCAS?node-id=0-1&t=YEG6rbUmBaRZyuTw-1</a></p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              학생들의 학습 현황과 성취 결과를 효율적으로 관리할 수 있는 선생님용 영어 단어 프로그램을 디자인하고 퍼블리싱하였습니다.<br>
+              이 프로그램은 학생들의 시험 결과 확인, 성취도 분석, 학부모에게 결과 공유 등 다양한 관리 기능을 포함하고 있어 교사들이 체계적으로 학습 데이터를 관리할 수 있도록 돕습니다.<Br>
+              Bootstrap 기반의 반응형 웹 구조로 설계하여 다양한 디바이스 환경에서도 일관된 사용 경험을 제공하며, <br>
+              방대한 데이터를 빠르고 직관적으로 확인할 수 있도록 UI 구성과 콘텐츠 구조를 최적화하였습니다.<br>
+              실제 교육과 관련하여, 기능성과 사용성을 동시에 만족시키는 실용적인 퍼블리싱 작업에 중점을 두었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">어셔어학원 홈페이지</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://www.usher.co.kr/index.do" target="_blank">
+              <img src="/img/usher_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>         
+            <a href="https://www.usher.co.kr/index.do" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.00.00 ~ 2023.00.00</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 디자인, 퍼블리싱, 모바일</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery, bootstrap</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              어셔어학원 토플 전문 영어학원 홈페이지의 전체 디자인 및 퍼블리싱 리뉴얼 작업을 진행하였습니다.<br>
+              어셔어학원의 핵심 컬러인 레드를 메인 컬러로 잡고 학원의 특성과 강점을 효과적으로 전달할 수 있도록 기획하였습니다.<br>
+              텍스트 중심의 정보 전달에 중점을 두고 깔끔하고 직관적인 UI/UX로 구성하였으며,<br>
+              사용자가 학원의 콘텐츠를 편안하게 접할 수 있도록 레이아웃을 최적화하였습니다.<br>
+              또한 사용자의 접근성과 편의성을 높이기 위해 모바일 전용 레이아웃도 별도로 설계하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">어셔인 사이트</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://usherin.usher.co.kr/intro/voca_introduce.do" target="_blank">
+              <img src="/img/usherin_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>
+            <a href="https://usherin.usher.co.kr/intro/voca_introduce.do" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.00.00 ~ 2023.00.00</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 디자인, 퍼블리싱, 유지보수, 모바일</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              해당 웹사이트는 어셔어학원 내의 프로그램, 인강, 교재 등을 편리하게 구매할 수 있도록 구축된 사이트입니다.<br>
+              기존 사이트의 구조와 디자인 전반을 분석하여, 대부분 페이지 디자인 개선 및 퍼블리싱 작업을 추가하였습니다.<br>
+              사용자의 접근성과 편의성을 높이기 위해 모바일 전용 레이아웃도 별도로 설계하였습니다.<br>
+              콘텐츠의 전달력과 UI 일관성에 중점을 두어, 어셔어학원의 교육 콘텐츠가 효과적으로 노출될 수 있도록 구성하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">IDRSOFT 홈페이지</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://www.idrsoft.com/" target="_blank">
+              <img src="/img/idrsoft_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>           
+            <a href="https://www.idrsoft.com/" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.05 ~ 2023.06 (약 2개월)</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 기획, 디자인, 퍼블리싱, 반응형</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              이 웹사이트는 IDRSOFT 회사의 홈페이지로, 기획부터 디자인, 퍼블리싱까지 모든 단계를 직접 작업하였습니다.<br>
+              홈페이지는 단일 페이지로 구성되어 있으며 총 7개의 색션으로 구성되어  있습니다.<br>
+              각 섹션은 명확한 정보 전달을 위해 마우스 휠 이벤트를 활용하여 스크롤이 가능하도록 작업하였습니다.<br> 
+              또한, 웹사이트의 가시성을 높이기 위해 swiper 라이브러리를 활용하여 슬라이드 이벤트와 autoplay기능을 구현하였고<br>
+              java script, jQuery등을 사용해 기능을 구현하여 인터렉션을 추가하였습니다.<br> 
+              또한, 모바일 및 테블릿 환경에서도 웹사이트가 원활하게 작동하도록 반응형 작업을 적용하여 최적의 사용자 경험을 제공하고자 했습니다.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">IDRSOFT SOLUTION 사이트</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://사이트주소" target="_blank">
+              <img src="/img/solution_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>            
+            <a href="https://사이트주소" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2024.03 ~ 2024.05 (약 3개월)</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 디자인, 퍼블리싱</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              이 사이트는 IDRSOFT 회사 내의 Client 솔루션으로, 기획 단계를 바탕으로 디자인 및 퍼블리싱 작업을 진행한 프로젝트 입니다.<br>
+              총 10개의 페이지로 구성되어 있으며, 사이트 방문자의 방문 특성 및 사이트의 전체적인 통계 및 분석 정보를 제공합니다.<Br>
+              헤더에는 모드 전환 스크립트 기능을 추가하여 사용자들이 light mode와 dark mode 간에 쉽게 전환할 수 있도록하였습니다. <br>
+              또한, 몇몇 페이지는 사용자들이 정보를 한눈에 쉽게 파악할 수 있도록 스크롤 없이 한 화면에 모든 내용을 담았습니다.<Br>
+              이 외에도 웹사이트의 시각적 효과와 사용자 몰입도를 높이기 위해 애니메이션 인터랙션을 추가하여 동적인 웹 환경을 조성하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">청년몽땅 AI 사이트</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://youth.seoul.go.kr/ai/smart/api/smartUI/main.do#" target="_blank">
+              <img src="/img/smartAI_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>         
+            <a href="https://youth.seoul.go.kr/ai/smart/api/smartUI/main.do#" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.10 ~ 2024.01 (약 4개월)</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 디자인, 퍼블리싱, 유지보수</p>
+            <p><strong class="text-danger">사용툴</strong> : figma, photoshop, html, css, js, jquery, D3</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              청년몽땅 AI는 청년 몽땅 정보통 사이트 내에서 제공되는 AI 인공지능 맞춤형 서비스로,<Br>
+              AI와 빅데이터 기술을 활용하여 개인별 맞춤형 정책 추천을 제공합니다.<Br>
+              방문 목적에 따라 메인 화면 구성이 달라지며,<br> 이러한 맞춤형 화면 구성을 위해 퍼블리싱 작업과 지속적인 유지보수 작업을 수행하였습니다.<br>
+              특히, 데이터를 보다 시각적으로 효과적으로 전달하기 위해 Chart D3를 활용한 작업에 중점을 두었습니다.<Br>
+              이 외에도 사용자 인터페이스와 사용자 경험을 개선하기 위해 Javascript를 사용하여 다양한 인터랙션 요소를 구현하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">TaskWorld 사이트</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://사이트주소" target="_blank">
+              <img src="/img/taskworld_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>           
+            <a href="https://사이트주소" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.08 ~ 2023.09 (약 2개월)</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 퍼블리싱</p>
+            <p><strong class="text-danger">사용툴</strong> : photoshop, html, css, js, jquery</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              이 사이트는 칸반 차트로 구성된 업무 관리 플랫폼으로, 클론 코딩 작업을 통해 해당 사이트를 구현하였습니다.<br>
+              개발 전 단계까지 필요한 모든 기능들을 JavaScript와 jQuery를 활용하여 구현하는 데 주안점을 두었습니다.<br>
+              드래그 앤 드롭 기능을 통해 사용자들이 쉽게 칸반 보드에서 태스크를 이동할 수 있도록 하였으며,<br>
+              실시간 업데이트와 같은 인터랙티브 요소를 추가하여 사용 경험을 강화하였습니다.<br>
+              또한, jQuery의 플러그인을 활용하여 모듈화된 코드를 작성함으로써, 퍼블리셔로서의 기술적 역량을 발휘한 작업입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModal8Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="projectModalLabel">KB라이프 사이트</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <div class="text-center mb-5 d-flex align-items-center" style=" width: 60%; flex-direction: column; margin: 0px auto;">
+            <a href="https://www.kblife.co.kr/" target="_blank">
+              <img src="/img/kbLife_img-detail.png" alt="VOCAS 미리보기" class="img-fluid modal-work-detail-img">
+            </a>           
+            <a href="https://www.kblife.co.kr/" target="_blank" class="btn btn-dark mt-4 go-site-btn">해당 사이트로 이동</a>
+          </div>
+
+          <!-- WORK INFO -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">WORK INFO</h5>
+            <p class="mb-4"><strong class="text-danger">제작기간</strong> : 2023.04 ~ 2023.06 (약 3개월)</p>
+            <p class="mb-4"><strong class="text-danger">제작영역</strong> : 퍼블리싱, 유지보수</p>
+            <p><strong class="text-danger">사용툴</strong> : html, css, js, jquery, bootstrap</p>
+          </div>
+
+          <!-- OVER VIEW -->
+          <div class="modal-info-contents-text_wrap">
+            <h5 class="fw-bold modal-info-contents-title">OVER VIEW</h5>
+            <p>
+              KB라이프 사이트는 여러 협력 업체들과의 공동 프로젝트로,<br>
+              추가 페이지 디자인 및 퍼블리싱 작업과 유지보수 작업 담당을 하였습니다.<br>
+              KB라이프의 브랜드 아이덴티티를 유지하며 정해진 메인 컬러를 준수하여 작업을 진행하였습니다.<br>
+              이 프로젝트에서는 부트스트랩 프레임워크를 기반으로 하여 사용자 친화적인 기본 레이아웃을 유지하는 데 중점을 두었습니다.<br>
+              또한, 사용자들이 정보를 보다 쉽게 접근하고 이해할 수 있도록 테이블과 리스트 작업에 많은 노력을 기울였습니다.<br>
+              이 프로젝트는 단순히 퍼블리싱 작업을 넘어, 협력 업체들과의 긴밀한 협업을 통해 KB라이프 사이트의 전반적인 품질을 높이는 데 기여하였습니다. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Init -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 60,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true 
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+
+  <!--js-->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
