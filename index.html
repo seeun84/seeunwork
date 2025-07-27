@@ -886,12 +886,26 @@
   <script>
     //header active효과
     const navLinks = document.querySelectorAll('.nav-link');
+    const logo = document.querySelector('.navbar-brand');
+    const mainLink = document.querySelector('.nav-link[href="#main"]');
 
     navLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         navLinks.forEach(el => el.classList.remove('active'));
         this.classList.add('active');
       });
+    });
+
+    logo.addEventListener('click', function (e) {
+      e.preventDefault(); // 기본 동작 막기 (맨 위로 이동하는 걸 막음)
+      navLinks.forEach(el => el.classList.remove('active'));
+      mainLink.classList.add('active');
+
+      // 선택적으로 메인 섹션으로 스크롤 이동
+      const mainSection = document.querySelector('#main');
+      if (mainSection) {
+        mainSection.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   </script>
 
