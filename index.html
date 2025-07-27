@@ -28,7 +28,7 @@
 <body>
 
   <!--header-->
-  <header>
+  <header class="header">
     <nav class="navbar navbar-expand-md navbar-dark">
       <a class="navbar-brand" href="#">
         <img src="/img/logo.png" alt="로고">
@@ -43,12 +43,11 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav text-uppercase">
-            <li class="nav-item"><a class="nav-link active" href="#">Main</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#main">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech">Tech</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -56,7 +55,7 @@
   </header>
 
   <!--main-->
-  <section class="main-section position-relative">
+  <section id="main" class="main-section position-relative">
     <div>
       <div class="main-title">PUBLISHER</div>
       <div class="main-subtitle">
@@ -76,7 +75,7 @@
     </div>
   </section>
 
-  <section class="about-section position-relative">
+  <section id="about" class="about-section position-relative">
     <div class="background-text-slide">
       <span>WEB PUBLISHER WEB PUBLISHER WEB PUBLISHER WEB PUBLISHER</span>
     </div>
@@ -111,7 +110,7 @@
     </div>
   </section>
 
-  <section class="portfolio-section" style="padding-bottom: 0px;">
+  <section id="tech" class="portfolio-section" style="padding-bottom: 0px;">
     <div class="container-wrapper" style="width: 90%;">
       <div class="swiper mySwiper swiper-contents_wrap">
         <div class="swiper-wrapper">
@@ -247,7 +246,7 @@
     </div>
   </section>
 
-  <section class="work-section p-4">
+  <section id="work" class="work-section p-4">
     <div class="bg-white shadow work-section_wrap">
       <h3 class="fw-bold work-section-title">WORKS</h3>
       
@@ -426,7 +425,7 @@
     </div>
   </section>
 
-  <section class="contact-section text-white">
+  <section id="contact" class="contact-section text-white">
     <div class="container contact-footer-container">
       <div class="row mb-5">
         <div class="col-md-6 contact-title_wrap">
@@ -883,6 +882,18 @@
 
   <!--js-->
   <script src="js/main.js"></script>
+
+  <script>
+    //header active효과
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 
 </body>
 </html>
